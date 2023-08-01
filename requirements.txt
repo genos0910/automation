@@ -3,3 +3,4 @@ selenium
 requests
 websocket-client
 pytest
+locust

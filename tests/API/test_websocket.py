@@ -1,12 +1,8 @@
-import pytest
 from websocket import create_connection
 
-def test_websocket_connection():
-    ws = create_connection("wss://echo.websocket.org")
-
-    message = "Hello, WebSocket"
-    ws.send(message)
+def test_websocket_api():
+    ws = create_connection("ws://echo.websocket.org")
+    ws.send("Hello, Websocket")
     result = ws.recv()
-
+    assert result == "Hello, Websocket"
     ws.close()
-    assert result == message

@@ -1,3 +1,5 @@
 pytest-html
 selenium
+requests
+websocket-client
 pytest

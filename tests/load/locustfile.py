@@ -1,12 +1,17 @@
 from locust import HttpUser, task, between
 
-class WebsiteUser(HttpUser):
+class UserBehavior1(HttpUser):
     wait_time = between(1, 2.5)
+    host = "https://www.google.com"
 
-    @task(2)
-    def get_home(self):
+    @task
+    def load_homepage(self):
         self.client.get("/")
 
-    @task(1)
-    def get_search(self):
-        self.client.get("/search?q=locust")
+class UserBehavior2(HttpUser):
+    wait_time = between(1, 2.5)
+    host = "https://www.google.com"
+
+    @task
+    def perform_search(self):
+        self.client.get("/search?q=openai")

@@ -22,11 +22,11 @@ payload ={
     "username": username,
     "credit": credit,
     "transaction-id": transaction_id,
-    "key": secret_key
+    "key": md5_value
 }
 
 def test_post_request():
-    response = requests.post(f'{host_url}+', data = payload)
+    response = requests.post(f'{host_url+api_path}', data = payload)
     assert response.status_code == 200
     json_response = response.json()
     print(json_response)

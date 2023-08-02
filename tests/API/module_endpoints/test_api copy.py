@@ -1,5 +1,12 @@
 import requests
 
+platform_id = ""
+uuid = ""
+username=""
+credit=""
+transaction_id=""
+key=""
+
 def test_get_request():
     response = requests.get('https://jsonplaceholder.typicode.com/posts/1')
     assert response.status_code == 200

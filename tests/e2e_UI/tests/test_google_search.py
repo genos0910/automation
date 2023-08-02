@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/Users/genos_automation_project')
+sys.path.append('/Users/genosho/Documents/automation')
 import pytest
 from selenium import webdriver
 from pages.google_search_page import GoogleSearchPage

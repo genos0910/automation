@@ -7,3 +7,4 @@ locust
 pandas
 matplotlib
 Jinja2
+allure-pytest

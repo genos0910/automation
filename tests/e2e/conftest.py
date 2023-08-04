@@ -1,5 +1,4 @@
 import pytest
-from py._xmlgen import html
 from selenium import webdriver
 
 # 啟動和關閉 Selenium WebDriver
@@ -50,14 +49,3 @@ def open_file():
 @pytest.fixture(scope="module")
 def test_data():
     return {"username": "test", "password": "test"}
-
-
-
-
-
-@pytest.mark.hookwrapper
-def pytest_runtest_makereport(item):
-    outcome = yield
-    report = outcome.get_result()
-    getattr(report, 'extra', [])
-    report.nodeid = report.nodeid.encode("utf-8").decode("unicode_escape")  # 解決亂碼

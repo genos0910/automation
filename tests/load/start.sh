@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd /Users/genosho/Documents/automation/
 
 locust -f tests/load/locustfile.py  --users 100 --spawn-rate 10 --csv=reports/

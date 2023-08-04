@@ -3,6 +3,7 @@ import uuid
 import hashlib
 import random
 import string
+import json
 
 host_url = "https://wt-game-api.fb-games-stage.cc"
 api_path = "/api/v1/user-login"
@@ -30,3 +31,5 @@ def test_post_request():
     assert response.status_code == 200
     json_response = response.json()
     print(json_response)
+    assert json_response['error']['msg'] == "Success"  # 驗證是否成功
+

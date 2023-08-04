@@ -1,0 +1,1 @@
+{'error': {'code': 0, 'msg': 'Success', 'uuid': '0747fbd8-74e8-47bd-8889-5adf91146cfb'}, 'redirect-url': 'https://wt-live.fb-games-stage.cc/?pid=D3DFO&token=BZK54ThezdvpKvPFU96WGvNfRvZUCzdVtvTmDuv9XaYX1UsJI0cgXzGYKJ6sEpMJB8mBQkRnAElVV2vJgojzuglY1L25PGTITaFnxPWK_B0z8GGafgqzasuGEIWGX-l3'}
